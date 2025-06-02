@@ -237,7 +237,7 @@ flex-shrink: 0;
 
 
 .footer {
-    margin-top: 204px;
+    margin-top: 154px;
     background-color: #2f303a;
     width: 1600px;
 height: 252px;
@@ -282,3 +282,42 @@ letter-spacing: 0.42px;
     margin-left: -80px ;
 }
 
+.portfolio-item {
+    border-radius: 4px;
+background: var(--team-background);
+width: 125px;
+height: 38px;
+flex-shrink: 0;
+
+}
+
+.portfolio-list {
+    display: flex;
+    margin-top: 126px;
+    border-radius: 4px;
+background: var(--team-background);
+gap: 8px;
+margin-left: 300px;
+    
+}
+
+.portfolio-btn {
+    width: 125px;
+height: 38px;
+flex-shrink: 0;
+}
+
+button:hover,
+button:focus {
+color: var(--accent-color);
+}
+
+.card-item {
+    width: 370px;
+height: 294px;
+flex-shrink: 0;
+}
+
+.card-list {
+    display:grid;
+}
