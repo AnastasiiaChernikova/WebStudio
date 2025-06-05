@@ -19,7 +19,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 .header {
@@ -532,6 +532,23 @@ border: transparent;
 
 }
 
+.data-button {
+    color: var(--title-color);
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+padding: 10px 52px;
+border-radius: 4px;
+background: #188CE8;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+align-items: center;
+border: transparent;
+margin-left: 165px;
+margin-top: 45px;
+}
+
 .footer-send {
     width: 24px;
 height: 24px;
@@ -695,7 +712,7 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 width: 448px;
 height: 40px;
 flex-shrink: 0;
-margin-top: 30px;
+margin-top: px;
 margin-left: 40px;
 }
 
@@ -705,7 +722,7 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 width: 448px;
 height: 40px;
 flex-shrink: 0;
-margin-top: 28px;
+margin-top: px;
 margin-left: 40px;
 }
 
@@ -715,8 +732,12 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 width: 448px;
 height: 40px;
 flex-shrink: 0;
-margin-top: 28px;
 margin-left: 40px;
+}
+
+.mail-input:hover,
+.mail-input:focus {
+    input-security: var(--accent-color);
 }
 
 .com-input {
@@ -725,8 +746,15 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 width: 448px;
 height: 120px;
 flex-shrink: 0;
-margin-top: 28px;
+margin-top: px;
 margin-left: 40px;
+color: rgba(117, 117, 117, 0.50);
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+margin-bottom: px;
+resize: none;
 }
 
 .namem {
@@ -791,4 +819,61 @@ flex-shrink: 0;
 height: 18px;
 flex-shrink: 0;
 margin-left: 496px;
+}
+
+.data-text {
+    color: #757575;
+font-size: 12px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.12px;
+margin-left: 41px;
+
+}
+
+.data-lii {
+    margin-top: 20px;
+}
+
+.data-p {
+    color: #757575;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.42px;
+margin-left: 77px;
+margin-top: -90px;
+
+}
+
+.icon {
+    width: 16px;
+height: 15px;
+fill: #212121;
+margin-left: 52px;
+margin-top: -20px;
+}
+
+.icon-img1 {
+    width: 18px;
+height: 18px;
+flex-shrink: 0;
+margin-left: 52px;
+margin-top: -360px;
+}
+
+.icon-img2 {
+    width: 18px;
+height: 18px;
+flex-shrink: 0;
+margin-left: 52px;
+margin-top: 55px;
+}
+
+.icon-img3 {
+    width: 18px;
+height: 18px;
+flex-shrink: 0;
+margin-left: 52px;
+margin-top: 57px;
 }
