@@ -5,21 +5,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    text-align: center;
+    @extend %flex;
 }
 
 .hero-title {
-    color: var(--title-color);
-text-align: center;
-font-size: 44px;
-font-weight: 900;
-line-height: 60px; /* 136.364% */
+    @include main-text (44px, "Raleway", 900, #fff);
+//     color: var(--title-color);
+     @extend %flex;
+// font-size: 44px;
+// font-weight: 900;
+ line-height: 60px; /* 136.364% */
 letter-spacing: 2.64px;
-text-transform: uppercase;
-width: 696px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 30px;
+ text-transform: uppercase;
+ width: 696px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 30px;
 animation-name: hero-title;
 animation-duration: 2s;
 animation-delay: 100ms;
@@ -61,13 +62,15 @@ animation-iteration-count: 1;
   
 
 .hero-btn {
+    @include main-text (16px, "Roboto", 700, #fff);
     border-radius: 4px;
 background: var(--accent-color);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 color: var(--title-color);
-text-align: center;
-font-size: 16px;
-font-weight: 700;
+@extend %flex;
+
+// font-size: 16px;
+// font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
 padding: 10px 32px;
@@ -188,7 +191,7 @@ padding: 10px 32px;
 }
 
 .advent-list {
-    display: flex;
+    @extend %flex;
     gap: 30px;
 }
 

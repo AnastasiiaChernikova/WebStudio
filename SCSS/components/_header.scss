@@ -28,8 +28,8 @@ body {
 }
 
 .header .container {
-    display: flex;
-    align-items: center;
+     @extend %flex;
+    
 }
 
 
@@ -50,16 +50,17 @@ margin-right: 93px;
 }
 
 .header-list {
-    display: flex;
+    @extend %flex;
     gap: 50px;
 }
 
 .header-link {
-    color: var(--text-color);
-font-size: 14px;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+    @include main-text (14px, "Roboto", 500, #212121);
+//     color: var(--text-color);
+// font-size: 14px;
+// font-weight: 500;
+// line-height: normal;
+// letter-spacing: 0.28px;
 }
 
 .header-link:hover, 
@@ -68,19 +69,19 @@ letter-spacing: 0.28px;
 }
 
 .header-items {
-    display: flex;
+    @extend %flex;
     gap: 30px;
     margin-left: auto;
 }
 
 .header-contact {
+    @include main-text (14px, "Roboto", 500, #757575);
     color: var(--added-text);
 font-size: 14px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.28px;
-display: flex;
-align-items: center;
+@extend %flex;
 gap: 10px;
 }
 
@@ -93,12 +94,18 @@ gap: 10px;
 }
 
 .header-icon {
-    width: 16px;
-height: 12px;
-fill: var(--added-text);
+    @include icons(16px, 12px, 400, #757575);
+//     width: 16px;
+// height: 12px;
+// fill: var(--added-text);
 
 	-webkit-animation: pulsate-bck 0.5s ease-out infinite both;
 	        animation: pulsate-bck 0.5s ease-out infinite both;
+}
+
+
+.hero-btn {
+ align-items: center;
 }
 
 

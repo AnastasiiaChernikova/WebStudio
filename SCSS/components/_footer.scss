@@ -6,7 +6,7 @@
 }
 
 .footer .container {
-    display: flex;
+    @extend %flex;
     align-items: baseline;
 }
 
@@ -34,7 +34,7 @@ letter-spacing: 0.78px;
 
 .footer-list {
 margin-top: 9px;
-display: flex;
+@extend %flex;
 flex-direction: column;
 gap: 9px;
 
@@ -50,14 +50,16 @@ gap: 9px;
 }
 
 .footer-address {
-    color: var(--title-color);
-font-size: 14px;
-font-weight: 400;
+    @include main-text(14px, "Roboto", 400, rgba(255,255,255,0.60));
+//     color: var(--title-color);
+// font-size: 14px;
+// font-weight: 400;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.42px;
 }
 
 .footer-contact {
+    @include main-text(14px, "Roboto", 400, rgba(255,255,255,0.60));
     color: var(--footer-numbers);
 font-size: 14px;
 font-weight: 400;
@@ -70,9 +72,10 @@ letter-spacing: 0.42px;
 }
 
 .footer-title {
-    color: var(--title-color);
-font-size: 14px;
-font-weight: 700;
+    @include main-text(14px, "Roboto", 700, #fff);
+    // color: var(--title-color);
+// font-size: 14px;
+// font-weight: 700;
 line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
@@ -80,7 +83,7 @@ margin-bottom: 20px;
 }
 
 .footer-items {
-    display: flex;
+    @extend %flex;
     gap: 10px;
 }
 
@@ -89,9 +92,7 @@ margin-bottom: 20px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.10);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 }
 
 .footer-link:hover,
@@ -100,6 +101,7 @@ margin-bottom: 20px;
 }
 
 .footer-icon {
+    @include main-text(20px, 20px, var(--title-color) );
     width: 20px;
     height: 20px;
     fill: var(--title-color);
@@ -165,7 +167,7 @@ margin-bottom: 20px;
 }
 
 .footer-form {
-    display: flex;
+    @extend %flex;
     gap: 12px;
 }
 
@@ -187,7 +189,7 @@ padding-left: 16px;
 
 .footer-btn {
     color: var(--title-color);
-text-align: center;
+    @extend %flex;
 font-size: 16px;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
@@ -196,8 +198,7 @@ padding: 10px 28px;
 border-radius: 4px;
 background: var(--accent-color);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-display: flex;
-align-items: center;
+@extend %flex;
 gap: 10px;
 border: transparent;
 
@@ -205,7 +206,7 @@ border: transparent;
 
 .data-button {
     color: var(--title-color);
-text-align: center;
+    @extend %flex;
 font-size: 16px;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
@@ -214,7 +215,7 @@ padding: 10px 52px;
 border-radius: 4px;
 background: #188CE8;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-align-items: center;
+@extend %flex;
 border: transparent;
 margin-left: 165px;
 margin-top: 45px;
