@@ -5,10 +5,10 @@
     padding-bottom: 60px;
 }
 
-.footer .container {
-    @extend %flex;
-    align-items: baseline;
-}
+// .footer .container {
+//     @extend %flex;
+//     align-items: baseline;
+// }
 
 .footer-logo {
     color: var(--title-color);
@@ -101,7 +101,7 @@ margin-bottom: 20px;
 }
 
 .footer-icon {
-    @include main-text(20px, 20px, var(--title-color) );
+    @include icons(20px, 20px, var(--title-color) );
     width: 20px;
     height: 20px;
     fill: var(--title-color);
